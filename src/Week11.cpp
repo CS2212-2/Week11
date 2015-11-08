@@ -20,8 +20,10 @@ int main() {
 	     cin>>n;
 	     // Factorial Function Call
 	    // cout<<n<<" Factorial Value Is "<<r1.factorial(n);
-
-	     r1.method1(n);
+	     	cout<<n<<" Tail Factorial Value Is "<<r1.tail_factorial(n) << endl;
+	    // r1.method1(n);
+	     cout<<n<<" Fibonacci Value Is "<<r1.Fibonacci(n)<< endl;
+	     cout<<n<<" Check if is Prime Value Is "<<r1.isPrime(n,2)<< endl;
 
 	     return 0;
 	 }
