@@ -23,6 +23,9 @@ class Recursion
 	int factorial_i(int currentNumber, int sum) ;
 	int Fibonacci(int n);
 	bool isPrime(int n, int d);
+	void sortAscending ( int arr[], int size ) ;
+	void sortDescending ( int arr[], int size );
+	void printArray(int arr[], int size) ;
 
 };
 #endif /*RECURSION_H_*/

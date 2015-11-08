@@ -69,3 +69,44 @@ if (n==1)
     return 1;
 return( Recursion::Fibonacci(n-2) + Recursion::Fibonacci(n-1) );
 }
+
+void Recursion::sortAscending ( int arr[], int size ) {
+    int maxIndex = 0, temp = 0, index = 0;
+    for ( index = maxIndex; index < size; index++ ) {
+        if ( arr[index] > arr[maxIndex] ) {
+            maxIndex = index;
+        }
+    }
+    temp = arr[size-1];
+    arr[size-1] = arr[maxIndex];
+    arr[maxIndex] = temp;
+
+    if ( size > 1 ) {
+        sortAscending ( arr, --size ) ;
+    }
+}
+
+// sort the array in descending order with selection sort
+void Recursion::sortDescending ( int arr[], int size ) {
+    int maxIndex = 0, temp = 0, index = 0;
+    for ( index = maxIndex; index < size; index++ ) {
+        if ( arr[index] < arr[maxIndex] ) {
+            maxIndex = index;
+        }
+    }
+    temp = arr[size-1];
+    arr[size-1] = arr[maxIndex];
+    arr[maxIndex] = temp;
+
+    if ( size > 1 ) {
+        sortDescending ( arr, --size ) ;
+    }
+}
+
+// output contents of array to screen
+void Recursion::printArray(int arr[], int size) {
+    for ( int i = 0; i < size; i++ ) {
+        cout << arr[i] << ' ';
+    }
+    cout << endl;
+}
