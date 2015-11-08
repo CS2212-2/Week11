@@ -1,5 +1,5 @@
-#ifndef RECUSRION_H
-#define RECUSRION_H
+#ifndef RECURSION_H
+#define RECURSION_H
 
 #include <iostream>
 #include <string>
@@ -18,6 +18,7 @@ class Recursion
 	Recursion();
 
 	long factorial(int n);
+	void method1(int i);
 
 };
-#endif /*RECUSRION_H_*/
+#endif /*RECURSION_H_*/

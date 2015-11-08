@@ -22,3 +22,11 @@ long Recursion:: factorial(int n)
   else
     return(n * factorial(n-1));
 }
+
+void Recursion::method1(int i) {
+  cout << "The number is: " << i << endl;
+  i++;
+  if(i<10) {
+    method1(i);
+  }
+}

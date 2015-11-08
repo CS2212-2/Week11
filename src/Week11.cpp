@@ -19,7 +19,9 @@ int main() {
 	     cout<<"Enter the Number :";
 	     cin>>n;
 	     // Factorial Function Call
-	     cout<<n<<" Factorial Value Is "<<r1.factorial(n);
+	    // cout<<n<<" Factorial Value Is "<<r1.factorial(n);
+
+	     r1.method1(n);
 
 	     return 0;
 	 }
