@@ -25,7 +25,9 @@ int main() {
 	     cout<<n<<" Fibonacci Value Is "<<r1.Fibonacci(n)<< endl;
 	     cout<<n<<" Check if is Prime Value Is "<<r1.isPrime(n,2)<< endl;
 
-
+	     // print backward
+	     r1.print_backwards();
+	     float output = r1.raised_to_power(5,2) ;
 	     int arr[8] = { 23,45,6, 20, 5, 31, 66,99 };
 	         cout << "Sorting in ascending order..." << endl;
 	         cout << "Original array:\t";

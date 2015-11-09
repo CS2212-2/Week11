@@ -31,6 +31,13 @@ void Recursion::method1(int i) {
   }
 }
 
+int Recursion::sum (int num)
+{
+if (num==0)
+return 0;
+return (sum(num-1)+(num));
+}
+
 bool Recursion::isPrime(int n, int d)
 {
     if(n<2)
@@ -60,7 +67,18 @@ int Recursion::factorial_i(int currentNumber, int sum) {
         return factorial_i(currentNumber - 1, sum*currentNumber);
     }
 }
+void Recursion::print_backwards()
+	{
+		char character;
 
+		cout << "Enter a character ('.' to end program): ";
+		cin >> character;
+		if (character != '.')
+		{
+			print_backwards();
+			cout << character;
+		}
+	}
 int Recursion::Fibonacci(int n)
 {
 if (n==0)
@@ -69,7 +87,18 @@ if (n==1)
     return 1;
 return( Recursion::Fibonacci(n-2) + Recursion::Fibonacci(n-1) );
 }
-
+float Recursion::raised_to_power(float number, int power)
+	{
+		if (power < 0)
+		{
+			cout << "\nError - can't raise to a negative power\n";
+			exit(1);
+		}
+		else if (power == 0)
+			return (1.0);
+		else
+			return (number * raised_to_power(number, power - 1));
+	}
 void Recursion::sortAscending ( int arr[], int size ) {
     int maxIndex = 0, temp = 0, index = 0;
     for ( index = maxIndex; index < size; index++ ) {
